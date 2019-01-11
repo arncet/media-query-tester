@@ -1,17 +1,28 @@
 {
   "name": "media-query-tester",
   "version": "0.1.0",
-  "private": true,
+  "author": "Arnaud CETOUTE <arnaud.cetoute@hotmail.fr>",
+  "license": "MIT",
+  "homepage": "http://arncet.github.io/media-query-tester",
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.1"
+    "lodash": "4.17.11",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-hint": "3.2.0",
+    "react-icons": "3.2.2",
+    "react-monaco-editor": "0.22.0",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.3",
+    "react-tooltip-lite": "1.8.0",
+    "styled-components": "4.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +32,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "2.0.1"
+  }
 }
