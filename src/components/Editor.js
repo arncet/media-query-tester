@@ -9,10 +9,6 @@ class Editor extends Component {
 
   onChange = newValue => this.props.onChange(newValue)
 
-  componentDidMount = () => {
-    //this.refs.monaco.editor.setSelection(new window.monaco.Range(7,1,7,24))
-  }
-
   render() {
     const { code } = this.props
     return (

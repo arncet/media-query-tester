@@ -242,20 +242,6 @@ export const StyledPreview = styled.div`
   }
 `
 
-export const StyledPreviewIframe = styled.iframe`
-  display: block;
-  border: none;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  -moz-box-shadow: 0px 0px 5px -1px #AFAFAF;
-  -webkit-box-shadow: 0px 0px 5px -1px #AFAFAF;
-  -o-box-shadow: 0px 0px 5px -1px #AFAFAF;
-  box-shadow: 0px 0px 5px -1px #AFAFAF;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#AFAFAF, Direction=NaN, Strength=5);
-  background-color: #FFF;
-`
-
 export const StyledSectionTitle = styled.div`
   color: #FFF;
   font-size: 36px;
@@ -293,6 +279,11 @@ export const StyledBrowserTopbar = styled.div`
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding-left: 15px;
+`
+
+export const StyledBrowserScreen = styled.div`
+  background-color: #FFF;
+  height: 100%;
 `
 
 export const StyledBrowserTopbarButton = styled.div`

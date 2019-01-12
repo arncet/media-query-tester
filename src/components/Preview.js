@@ -16,8 +16,6 @@ class Preview extends Component {
     ratioY: DEFAULT_RATIO_Y
   }
 
-  iframe = null
-
   convertSize = (property, value) => {
     const { ratioX, ratioY } = this.state
     const valueInt = parseInt(value, 10)
@@ -45,8 +43,6 @@ class Preview extends Component {
       }, [])
   }
 
-  setRef = el => this.iframe = el
-
   render = () => {
     const { ratioX, ratioY } = this.state
     const queryRules = this.createQueryRules()
@@ -55,9 +51,6 @@ class Preview extends Component {
       <StyledPreview>
         <BrowserIllu ratioX={ratioX} ratioY={ratioY}>
           <QueryRules queryRules={queryRules} />
-          <StyledPreviewIframe title='preview-document' src="/preview-document" ref={this.setRef}>
-            <p>Your browser does not support iframes.</p>
-          </StyledPreviewIframe>
         </BrowserIllu>
       </StyledPreview>
     )
